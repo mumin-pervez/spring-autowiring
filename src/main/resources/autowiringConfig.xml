@@ -2,9 +2,9 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-  <bean class="com.mumin.springautowiring.autowiring.Heart" id="heart1"></bean>
+  <bean class="com.mumin.springautowiring.autowiring.Heart" id="heart"></bean>
 
-  <bean class="com.mumin.springautowiring.autowiring.Human" id="human">
-    <property name="heart" ref="heart1"/>
+  <bean class="com.mumin.springautowiring.autowiring.Human" id="human" autowire="byName">
+  <!--  <property name="heart" ref="heart1"/>-->
   </bean>
 </beans>

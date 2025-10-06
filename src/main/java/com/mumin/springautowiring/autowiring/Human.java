@@ -12,7 +12,7 @@ public class Human {
     if (heart != null) {
       heart.pump();
     } else {
-      System.out.println("Dead");
+      System.out.println("You are Dead");
     }
 
   }
